@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunbase Assignment</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <p>Form Designer</p>
+      <button id="btn">Save</button>
+    </header>
+    <section class="section">
+      <div class="left-section">
+        <div class="aside-top">Components</div>
+        <div class="aside-bottom">
+          <div class="add-new" onclick="addComponent('text')">
+            <div>Input</div>
+            <div>+</div>
+          </div>
+          <div class="add-new" onclick="addComponent('textarea')">
+            <div>Textarea</div>
+            <div>+</div>
+          </div>
+          <div class="add-new" onclick="addComponent('select')">
+            <div>Select</div>
+            <div>+</div>
+          </div>
+          <div class="add-new" onclick="addComponent('button')">
+            <div>Button</div>
+            <div>+</div>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <div id="form"></div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
